@@ -2,7 +2,7 @@ import java.util.Arrays;
 
 public class Main {
 	
-	public void insertionSort(int [] ar) {
+	public static void insertionSort(int [] ar) {
 		//Inizio a scorrere il vettore
 		for(int i = 1; i < ar.length; i++) {
 			//Key è il valore che uso per il confronto
@@ -21,11 +21,8 @@ public class Main {
 	}
 	
 	public static void main(String [] args) {
-		Main main = new Main();
 		int arr[] = { 12, 11, 13, 5, 6 }; 
-		
-		main.insertionSort(arr);
-		
+		insertionSort(arr);
 		System.out.println(Arrays.toString(arr));
 	}
 	
